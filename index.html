@@ -46,7 +46,7 @@ function greetOnBirthday(i) {
   let today = new Date();
   for (let i = 0; i < people.length; i++) {
     if (today.getMonth() === people[i].birthday.getMonth() && today.getDate() === people[i].birthday.getDate()) {
-      alert(${people[i].name});
+      alert(${people[i].name} + 'Поздравим с днем рождения! Желаю вам всего наилучшего в ваш особенный день');
     }
   }
 }
