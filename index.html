@@ -36,17 +36,18 @@ let people = [
   { name: "Сафарян", birthday: new Date("09/22/2008"), gender: "male" },
   { name: "Соколов", birthday: new Date("09/24/2008"), gender: "male" },
   { name: "Чехизе", birthday: new Date("01/30/2008"), gender: "female" },
-  { name: "Шарлай", birthday: new Date("09/27/2008"), gender: "female" },
-
+  { name: "Шарлай", birthday: new Date("09/27/2008"), gender: "female" }
 ];
-
-function greetOnBirthday() {
+for (let i = 0; i < 10; i++) {
+function greetOnBirthday(1) {
   let today = new Date();
   for (let i = 0; i < people.length; i++) {
     if (today.getMonth() === people[i].birthday.getMonth() && today.getDate() === people[i].birthday.getDate()) {
       console.log(`Happy birthday to ${people[i].name} (${people[i].gender})! Wishing you all the best on your special day.`);
     }
   }
+}
+setInterval(greetOnBirthday, 1); // check every 24 hours
 }
     </script>
 
