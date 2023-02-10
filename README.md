@@ -1,2 +1,2 @@
-# komeristyj-komeristyj.github.io
-komeristyj/komeristyj.github.io
+# komeristyj.github.io
+komeristyj.github.io
