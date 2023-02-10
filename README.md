@@ -1,2 +1,1 @@
-komeristyj.github.io
-komeristyj.github.io
+./index.html
