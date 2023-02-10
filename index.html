@@ -10,6 +10,18 @@
         <li><a href="list.html">Расписание</a></li>
         <li><a href="uch.html">Ученики</a></li>
     </ul>
+    <script type="text/javascript">
+        let birthday = new Date("02/10/2008"); // replace with the actual birthday
+        for (let i = 0; i < 10; i++) {
+function greetOnBirthday(i) {
+  let today = new Date();
+  if (today.getMonth() === birthday.getMonth() && today.getDate() === birthday.getDate()) {
+    console.log("Happy birthday! Wishing you all the best on your special day.");
+  }
+}
 
+setInterval(greetOnBirthday, 1); // check every 24 hours
+        }
+    </script>
     </body>
 </html>
