@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Cache-control" content="public">
     <link rel="stylesheet" href="css\index.css">
+    <title>Главная</title>
     </head>
 <body>
     <ul id="bar">
@@ -45,7 +46,7 @@ function greetOnBirthday(i) {
   let today = new Date();
   for (let i = 0; i < people.length; i++) {
     if (today.getMonth() === people[i].birthday.getMonth() && today.getDate() === people[i].birthday.getDate()) {
-      alert('С днем рождения ${people[i].name} ! Желаю вам всего наилучшего в ваш особенный день');
+      alert('Поздравим с днем рождения ' ${people[i].name} '! Желаю вам всего наилучшего в ваш особенный день');
     }
   }
 }
