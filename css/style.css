@@ -25,5 +25,5 @@ html {
     background-size: cover;
   }
   table, th, tr, td {
-    opacity: 0.5;
+    fill-opacity: 0.5;
   }
