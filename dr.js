@@ -33,4 +33,4 @@ let people = [
       }
     }
   }
-  setInterval(greetOnBirthday, 1000); // проверка каждый час
+  setInterval(greetOnBirthday, 60 * 60 * 1000); // проверка каждый час
