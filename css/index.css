@@ -41,6 +41,18 @@ table {
   #bar li {
     display: inline;
   }
+  #bar p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    background-color: #565656; /* цвет кнопок */
+    border-radius: 10px;
+    text-align: center;
+  }
 
 
 #pr {
@@ -91,6 +103,6 @@ table {
   }
 
 
-  P {
+  p {
     text-align: center;
   }
