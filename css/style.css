@@ -27,3 +27,6 @@ html {
     -o-background-size: cover;
     background-size: cover;
   }
+  table, th, tr, td {
+    opacity: 0.5;
+  }
