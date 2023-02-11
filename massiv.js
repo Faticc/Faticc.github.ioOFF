@@ -26,7 +26,7 @@ let op = [
     { af: "Шарлай Алёна", vl: new value("1") }
   ];
   function proverka(i) {
-    let ts = new value(0);
+    let ts = new value("0");
     for (let i = 0; i < people.length; i++) {
         if (ts() === people[i].vl()) {
             console.log('тест');
