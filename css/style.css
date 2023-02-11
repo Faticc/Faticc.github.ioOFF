@@ -24,6 +24,3 @@ html {
     background-attachment: fixed;
     background-size: cover;
   }
-  table, th, tr, td {
-    opacity: 0.5;
-  }
