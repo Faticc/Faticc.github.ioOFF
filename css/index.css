@@ -88,3 +88,8 @@ table {
     padding: auto;
     text-align: center;
   }
+
+
+  option {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
