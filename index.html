@@ -47,13 +47,15 @@
             </table>
             </div>
 <script>
+    function save() {
     let select = document.querySelector("#go");
     let options = [].slice.call(select.options).map(function(option) {
         return option.value;
     });
 console.log(options);
+    }
 </script>
-
+<button class="btn-default" onclick="save()">Test</button>
 
 
 
