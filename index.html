@@ -45,6 +45,7 @@
             </table>
             </div>
 <script>
+    function test() {
 let select = document.querySelector("#mySelect");
 let options = [];
 
@@ -53,6 +54,7 @@ select.addEventListener("change", function() {
   options.push(selectedOption);
   console.log(options);
 });
+    }
 </script>
 <button class="btn-default" onclick="save()">Test</button>
 
