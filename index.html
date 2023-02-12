@@ -64,7 +64,9 @@ document.querySelector("#submitBtn").addEventListener("click", function() {
     let select2 = { name: "Кадыр", value: document.querySelector("#select2").value };
     options.push(select0, select1, select2);
     console.log(options);
-    downloadArray('options.txt', options);
+    document.getElementById('submitBtn').addEventListener('click', function() {
+  downloadArray(options, 'options.txt');
+});
 });
 </script>
 
