@@ -29,42 +29,42 @@
                 <tr>
                   <td>Person 1</td>
                   <td>
-                    <select id="select1">
-                      <option value="option1">Option 1</option>
-                      <option value="option2">Option 2</option>
+                    <select id="Саша">
+                      <option value="1">Присутствует</option>
+                      <option value="0">Отсутствует</option>
                     </select>
                   </td>
                 </tr>
                 <tr>
                   <td>Person 2</td>
                   <td>
-                    <select id="select2">
-                      <option value="option1">Option 1</option>
-                      <option value="option2">Option 2</option>
+                    <select id="Вика">
+                        <option value="1">Присутствует</option>
+                        <option value="0">Отсутствует</option>
                     </select>
                   </td>
                 </tr>
                 <tr>
                   <td>Person 3</td>
                   <td>
-                    <select id="select3">
-                      <option value="option1">Option 1</option>
-                      <option value="option2">Option 2</option>
+                    <select id="Кадыр">
+                        <option value="1">Присутствует</option>
+                        <option value="0">Отсутствует</option>
                     </select>
                   </td>
                 </tr>
               </table>
               <button id="submitBtn">Submit</button>
             <script>
-                let options = [];
-                document.querySelector("#submitBtn").addEventListener("click", function() {
+            let options = [];
+            document.querySelector("#submitBtn").addEventListener("click", function() {
                 options.length = 0; // Clearing the array
-                let select1 = document.querySelector("#select1").value;
-                let select2 = document.querySelector("#select2").value;
-                let select3 = document.querySelector("#select3").value;
+                let select1 = { name: "Саша", value: document.querySelector("#select1").value };
+                let select2 = { name: "Вика", value: document.querySelector("#select2").value };
+                let select3 = { name: "Кадыр", value: document.querySelector("#select3").value };
                 options.push(select1, select2, select3);
                 console.log(options);
-                });
+            });
             </script>
 
 
