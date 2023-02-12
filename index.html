@@ -72,6 +72,7 @@ function downloadArray(array, filename) {
     content += array[i].name + ',' + array[i].value + '\n';
   }
   var blob = new Blob([content], { type: 'text/plain' });
+  console.log(blob);
   var a = document.createElement('a');
   a.download = filename;
   a.href = URL.createObjectURL(blob);
