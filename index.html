@@ -29,8 +29,8 @@
                   <td>Саша</td>
                   <td>
                     <select id="select0">
-                      <option value="1">Присутствует</option>
-                      <option value="0">Отсутствует</option>
+                      <option value="Присутствует">Присутствует</option>
+                      <option value="Отсутствует">Отсутствует</option>
                     </select>
                   </td>
                 </tr>
@@ -38,8 +38,8 @@
                   <td>Вика</td>
                   <td>
                     <select id="select1">
-                        <option value="1">Присутствует</option>
-                        <option value="0">Отсутствует</option>
+                        <option value="Присутствует">Присутствует</option>
+                        <option value="Отсутствует">Отсутствует</option>
                     </select>
                   </td>
                 </tr>
@@ -47,8 +47,8 @@
                   <td>Кадыр</td>
                   <td>
                     <select id="select2">
-                        <option value="1">Присутствует</option>
-                        <option value="0">Отсутствует</option>
+                        <option value="Присутствует">Присутствует</option>
+                        <option value="Отсутствует">Отсутствует</option>
                     </select>
                   </td>
                 </tr>
@@ -67,7 +67,7 @@ document.querySelector("#submitBtn").addEventListener("click", function() {
 
   let content = '';
   for (var i = 0; i < options.length; i++) {
-    content += options[i].name + ':' + options[i].value + '\n';
+    content += options[i].name + ': ' + options[i].value + '\n';
   }
 
   var blob = new Blob([content], { type: 'text/plain' });
