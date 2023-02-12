@@ -16,7 +16,7 @@
             <div class="text-center">
                 <ul class="breadcrumb">
                     <li><a href="/index.html">Главная</a></li>
-                    <li><a href="/html/list.html">Расписания</a></li>
+                    <li><a href="/html/list.html">Расписание</a></li>
                     <li><a href="/html/uch.html">Ученики</a></li>
                     <li><a href="/html/uchit.html">Учителя</a></li>
                 </ul>
@@ -59,9 +59,9 @@
 let options = [];
 document.querySelector("#submitBtn").addEventListener("click", function() {
   options.length = 0;
-  let select0 = { name: "Саша", value: document.querySelector("#select0").value };
-  let select1 = { name: "Вика", value: document.querySelector("#select1").value };
-  let select2 = { name: "Кадыр", value: document.querySelector("#select2").value };
+  let select0 = { name: "", value: document.querySelector("#select0").value };
+  let select1 = { name: "", value: document.querySelector("#select1").value };
+  let select2 = { name: "", value: document.querySelector("#select2").value };
   options.push(select0, select1, select2);
   console.log(options);
 
