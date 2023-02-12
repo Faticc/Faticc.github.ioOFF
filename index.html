@@ -28,7 +28,7 @@
                 <tr>
                   <td>Саша</td>
                   <td>
-                    <select id="select1">
+                    <select id="select0">
                       <option value="1">Присутствует</option>
                       <option value="0">Отсутствует</option>
                     </select>
@@ -37,7 +37,7 @@
                 <tr>
                   <td>Вика</td>
                   <td>
-                    <select id="select2">
+                    <select id="select1">
                         <option value="1">Присутствует</option>
                         <option value="0">Отсутствует</option>
                     </select>
@@ -46,7 +46,7 @@
                 <tr>
                   <td>Кадыр</td>
                   <td>
-                    <select id="select3">
+                    <select id="select2">
                         <option value="1">Присутствует</option>
                         <option value="0">Отсутствует</option>
                     </select>
@@ -62,7 +62,7 @@ document.querySelector("#submitBtn").addEventListener("click", function() {
     let select1 = { name: "Саша", value: document.querySelector("#select1").value };
     let select2 = { name: "Вика", value: document.querySelector("#select2").value };
     let select3 = { name: "Кадыр", value: document.querySelector("#select3").value };
-    options.push(select1, select2, select3);
+    options.push(select0, select1, select2);
     console.log(options);
 });
 </script>
