@@ -32,26 +32,27 @@
             </tr>
             <tr>
                 <td>Учиник 1</td>
-                <td><select id="go"><option value="1">1</option><option value="0">0</option></select></td>
+                <td><select id="mySelect"></select><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></td>
             </tr>
             <tr>
                 <td>Учиник 2</td>
-                <td><select id="go"><option value="1">1</option><option value="0">0</option></select></td>
+                <td><select id="mySelect"></select><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></td>
             </tr>
             <tr>
                 <td>Учиник 3</td>
-                <td><select id="go"><option value="1">1</option><option value="0">0</option></select></td>
+                <td><select id="mySelect"></select><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option></select></td>
             </tr>
             </table>
             </div>
 <script>
-    function save() {
-    let select = document.querySelector("#go");
-    let options = [].slice.call(select.options).map(function(option) {
-        return option.value;
-    });
-console.log(options);
-    }
+let select = document.querySelector("#mySelect");
+let options = [];
+
+select.addEventListener("change", function() {
+  let selectedOption = select.value;
+  options.push(selectedOption);
+  console.log(options);
+});
 </script>
 <button class="btn-default" onclick="save()">Test</button>
 
