@@ -71,7 +71,7 @@ function downloadArray(array, filename) {
   for (var i = 0; i < array.length; i++) {
     content += array[i].name + ',' + array[i].value + '\n';
   }
-  var blob = new Blob([content], { type: 'text/plain' });
+  var blob = new blob([content], { type: 'text/plain' });
   console.log(blob);
   var a = document.createElement('a');
   a.download = filename;
