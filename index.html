@@ -54,6 +54,7 @@
                 </tr>
               </table>
               <button id="submitBtn">Submit</button>
+              <button id="downloadArray()">Submit2</button>
               </div>
 <script>
     let options = [];
@@ -65,6 +66,18 @@ document.querySelector("#submitBtn").addEventListener("click", function() {
     options.push(select0, select1, select2);
     console.log(options);
 });
+
+
+function downloadArray(array, filename) {
+  var blob = new Blob([array.join('\n')], { type: 'text/plain' });
+  var a = document.createElement('a');
+  a.download = filename;
+  a.href = URL.createObjectURL(blob);
+  a.click();
+  downloadArray(options, 'options.txt');
+}
+
+
 </script>
 
     </body>
