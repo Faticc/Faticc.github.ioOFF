@@ -1,5 +1,6 @@
 let options = [];
-document.querySelector("#submitBtn").addEventListener("click", function() {
+document.querySelector("#submitBtn").addEventListener("click", 
+function() {
     options.length = 0; // Clearing the array
     let select1 = { name: "Саша", value: document.querySelector("#select1").value };
     let select2 = { name: "Вика", value: document.querySelector("#select2").value };
