@@ -64,18 +64,19 @@ document.querySelector("#submitBtn").addEventListener("click", function() {
     let select2 = { name: "Кадыр", value: document.querySelector("#select2").value };
     options.push(select0, select1, select2);
     console.log(options);
-});
-document.getElementById('submitBtn').addEventListener('click', function() {
-  downloadArray(options, 'options.txt');
-});
-
-function downloadArray(options, filename) {
-  var blob = new Blob([options.join('\n')], { type: 'text/plain' });
+    downloadArray(options, 'options.txt');
+    function downloadArray(options, filename) {
+  var blob = new Blob([options.join('\n')]);
   var a = document.createElement('a');
   a.download = filename;
   a.href = URL.createObjectURL(blob);
   a.click();
-}
+    }
+});
+
+
+
+
 
 </script>
 
