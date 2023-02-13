@@ -11,18 +11,25 @@
     </head>
 
 <body>
-    <div class="text-center">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light breadcrumb">
-            <div class="text-center">
-                <ul class="breadcrumb">
-                    <li><a href="/index.html">Главная</a></li>
-                    <li><a href="/html/list.html">Расписание</a></li>
-                    <li><a href="/html/uch.html">Ученики</a></li>
-                    <li><a href="/html/uchit.html">Учителя</a></li>
-                  </ul>
-            </div>
-        </nav>
-    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Главная</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="/html/list.html">Расписание</a></li>
+              <li><a href="/html/uch.html">Ученики</a></li>
+              <li><a href="/html/uchit.html">Учителя</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <script type="text/javascript">
         var today = new Date();
         var month = today.getMonth() + 1;
