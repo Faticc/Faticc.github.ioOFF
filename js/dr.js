@@ -1,5 +1,7 @@
 window.onload = function() {
   setTimeout(function() {
+
+
 let people = [
     { name: "Абзаров", birthday: new Date("08/03/2008"), gender: "male" },
     { name: "Абрамова", birthday: new Date("01/27/2009"), gender: "female" },
@@ -34,6 +36,7 @@ let people = [
           alert(`Поздравим с днем рождения! Желаю вам всего наилучшего в ваш особенный день: ${people[i].name}`);
       }
     }
-  } 
+  }
+  setInterval(greetOnBirthday, 60 * 60 * 1000); // проверка каждый час 
  }, 5000); // 5000 миллисекунд (5 секунд)
 }
