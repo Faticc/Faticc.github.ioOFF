@@ -1,5 +1,3 @@
-window.onload = function() {
-  setTimeout(function() {
 let people = [
     { name: "Абзаров", birthday: new Date("08/03/2008"), gender: "male" },
     { name: "Абрамова", birthday: new Date("01/27/2009"), gender: "female" },
@@ -27,7 +25,9 @@ let people = [
     { name: "Чехизе", birthday: new Date("01/30/2009"), gender: "female" },
     { name: "Шарлай", birthday: new Date("09/27/2008"), gender: "female" }
   ];
-  function greetOnBirthday(i) {
+
+
+  window.onload = function greetOnBirthday(i) {
     let today = new Date();
     for (let i = 0; i < people.length; i++) {
       if (today.getMonth() === people[i].birthday.getMonth() && today.getDate() === people[i].birthday.getDate()) {
@@ -36,5 +36,3 @@ let people = [
     }
   }
   setInterval(greetOnBirthday, 60 * 60 * 1000); // проверка каждый час 
- }, 5000); // 5 секунд
-}
