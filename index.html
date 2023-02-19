@@ -58,6 +58,16 @@
         </div>
       </div>
     </div>
-</body>
+    
+    <script>
+      document.querySelector("#week").addEventListener("click", function() {
+      const daysOfWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+      const today = new Date();
+      const dayOfWeek = daysOfWeek[today.getDay()];
+      console.log(dayOfWeek); // Выводит текущий день недели в словесном формате
+      });
+    </script>
+    <button id="week">Кнопка</button>
+    </body>
 
 </html>
