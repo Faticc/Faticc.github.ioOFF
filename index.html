@@ -12,7 +12,7 @@
     <script src="/js/dr.js"></script>
 </head>
 
-<body>
+<body onload="week()">
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -59,13 +59,13 @@
       </div>
     </div>
     
-    <button onclick="week()">Получить день недели</button>
+<a><p>Домашнее задание на </p><p id="dow"></p></a>
     <script>
-    function week() {
+    function week() { //onload <body>
       const daysOfWeek = ["Понедельник", "Вторник", "Среду", "Четверг", "Пятницу", "Субботу", "Воскресенье"];
       const today = new Date();
       const dayOfWeek = daysOfWeek[today.getDay()];
-      console.log(dayOfWeek);
+      document.getElementById("dow").innerHTML = dayOfWeek; //id <p>
     }
     </script>
 
