@@ -31,7 +31,8 @@ let people = [
     let today = new Date();
     for (let i = 0; i < people.length; i++) {
       if (today.getMonth() === people[i].birthday.getMonth() && today.getDate() === people[i].birthday.getDate()) {
-          alert(`Поздравляем ученика 8В класса ${people[i].name} с днём рождения Надеемся, он будет здоровым!
+          alert(`Поздравляем ученика 8В класса ${people[i].name} 
+                 с днём рождения Надеемся, он будет здоровым!
                  И проведёт этот день весело и съест много вкусностей.
                  Пожалуйста, продолжайте быть счастливыми!`);
       }
