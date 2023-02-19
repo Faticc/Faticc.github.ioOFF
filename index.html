@@ -59,15 +59,18 @@
       </div>
     </div>
     
+    <button onclick="week()">Получить день недели</button>
+
     <script>
-      function week() {
+    function week() {
       const daysOfWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
       const today = new Date();
       const dayOfWeek = daysOfWeek[today.getDay()];
-      console.log(dayOfWeek); // Выводит текущий день недели в словесном формате
-}
+      console.log(dayOfWeek);
+    }
     </script>
-    <button id="week()">Кнопка</button>
+
+    
     </body>
 
 </html>
