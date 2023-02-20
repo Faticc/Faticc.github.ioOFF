@@ -9,14 +9,6 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script>
-      function week() { //onload <body>
-        const daysOfWeek = ["Понедельник", "Вторник", "Среду", "Четверг", "Пятницу", "Субботу", "Воскресенье"];
-        const today = new Date();
-        const dayOfWeek = daysOfWeek[today.getDay()];
-        document.getElementById("dow").innerHTML = dayOfWeek; //id 
-      }
-      </script>
 </head>
 
 <body>
@@ -39,6 +31,14 @@
       </div>
     </div>
   </nav>
+  <script>
+    function week() { //onload <body>
+      const daysOfWeek = ["Понедельник", "Вторник", "Среду", "Четверг", "Пятницу", "Субботу", "Воскресенье"];
+      const today = new Date();
+      const dayOfWeek = daysOfWeek[today.getDay()];
+      document.getElementById("dow").innerHTML = dayOfWeek; //id 
+    }
+    </script>
   <div class="container-fluid">
     <div class="text-center"><h3>Домашнее задание на <span id="dow"></span></h3></div>
     <div class="col-sm-6">
