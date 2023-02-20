@@ -10,6 +10,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="/js/dr.js"></script>
+    <script>
+      function week() { //onload <body>
+        const daysOfWeek = ["Понедельник", "Вторник", "Среду", "Четверг", "Пятницу", "Субботу", "Воскресенье"];
+        const today = new Date();
+        const dayOfWeek = daysOfWeek[today.getDay()];
+        document.getElementById("dow").innerHTML = dayOfWeek; //id 
+      }
+      </script>
 </head>
 
 <body onload="week()">
@@ -88,14 +96,6 @@
 
 
 
-    <script>
-    function week() { //onload <body>
-      const daysOfWeek = ["Понедельник", "Вторник", "Среду", "Четверг", "Пятницу", "Субботу", "Воскресенье"];
-      const today = new Date();
-      const dayOfWeek = daysOfWeek[today.getDay()];
-      document.getElementById("dow").innerHTML = dayOfWeek; //id 
-    }
-    </script>
 
 
     </body>
