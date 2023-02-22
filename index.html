@@ -10,9 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="/js/dr.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="291246378628-r4qqnfjjs6d7elf0svn4ebc12s4ecr31.apps.googleusercontent.com">
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script>
       function week() { //onload <body>
         const daysOfWeek = ["Понедельник", "Вторник", "Среду", "Четверг", "Пятницу", "Субботу", "Воскресенье"];
@@ -22,30 +19,6 @@
       }
       </script>
       
-      <script>
-        function signOut() {
-          var auth2 = gapi.auth2.getAuthInstance();
-          auth2.signOut().then(function () {
-            console.log('User signed out.');
-          });
-        }
-      </script>
-      <script>
-        function handleCredentialResponse(response) {
-          console.log("Encoded JWT ID token: " + response.credential);
-        }
-        window.onload = function () {
-          google.accounts.id.initialize({
-            client_id: "291246378628-r4qqnfjjs6d7elf0svn4ebc12s4ecr31.apps.googleusercontent.com",
-            callback: handleCredentialResponse
-          });
-          google.accounts.id.renderButton(
-            document.getElementById("buttonDiv"),
-            { theme: "outline", size: "large" }  // customization attributes
-          );
-          google.accounts.id.prompt(); // also display the One Tap dialog
-        }
-    </script>
 </head>
 
 <body onload="week()">
@@ -64,27 +37,10 @@
           <li><a href="/html/list.html">Расписание</a></li>
           <li><a href="/html/uch.html">Ученики</a></li>
           <li><a href="/html/uchit.html">Учителя</a></li>
-          <li><a href="/index.html" onclick="signOut();">Выход</a></li>
         </ul>
       </div>
     </div>
   </nav> 
-
-
-  <div id="g_id_onload"
-     data-client_id="291246378628-r4qqnfjjs6d7elf0svn4ebc12s4ecr31.apps.googleusercontent.com"
-     data-login_uri="https://faticc.github.io/index.html"
-     data-auto_prompt="false">
-  </div>
-  <div class="g_id_signin"
-     data-type="standard"
-     data-size="large"
-     data-theme="outline"
-     data-text="sign_in_with"
-     data-shape="rectangular"
-     data-logo_alignment="left">
-  </div>
-
           <div class="text-center">     
             <h3>Классные новости</h3>
         </div>
