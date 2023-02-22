@@ -20,6 +20,15 @@
         document.getElementById("dow").innerHTML = dayOfWeek; //id 
       }
       </script>
+      
+      <script>
+        function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+            console.log('User signed out.');
+          });
+        }
+      </script>
 </head>
 
 <body onload="week()">
@@ -38,7 +47,7 @@
           <li><a href="/html/list.html">Расписание</a></li>
           <li><a href="/html/uch.html">Ученики</a></li>
           <li><a href="/html/uchit.html">Учителя</a></li>
-          <li><div class="g-signin2" data-onsuccess="onSignIn">Вход</div></li>
+          <li><div class="g-signin2" data-onsuccess="onSignIn">Войти</div></li>
         </ul>
       </div>
     </div>
@@ -46,6 +55,7 @@
           <div class="text-center">     
             <h3>Классные новости</h3>
         </div>
+        <a href="/index.html" onclick="signOut();">Выход</a>
 
 <div>
   <div class="col-sm-4"> 
