@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="/js/dr.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="291246378628-r4qqnfjjs6d7elf0svn4ebc12s4ecr31.apps.googleusercontent.com">
     <script>
       function week() { //onload <body>
         const daysOfWeek = ["Понедельник", "Вторник", "Среду", "Четверг", "Пятницу", "Субботу", "Воскресенье"];
@@ -36,6 +38,7 @@
           <li><a href="/html/list.html">Расписание</a></li>
           <li><a href="/html/uch.html">Ученики</a></li>
           <li><a href="/html/uchit.html">Учителя</a></li>
+          <li><div class="g-signin2" data-onsuccess="onSignIn">Вход</div></li>
         </ul>
       </div>
     </div>
