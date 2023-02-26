@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="/css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     </head>
 
 <body>
@@ -32,10 +34,27 @@
       </nav>
     <script type="text/javascript">
         var today = new Date();
-        var month = today.getMonth() + 1;
+        var month1 = today.getMonth() + 1;
         var date = today.getDate();
-        document.body.innerHTML += "<center><H3><p>" + month +"."+ date + "</p></H3></center>"; 
+        document.body.innerHTML += "<center><H3><p>" + month1 +"."+ date + "</p></H3></center>"; 
     </script>
+
+    <script>
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth() + 1;
+    const day = today.getDate();
+    const link = document.createElement('a');
+    link.href = `https://foodmonitoring.ru/7370/food/${year}-${month}-${day}-sm.xlsx`;
+    link.setAttribute('download', 'столовая.xlsx');
+    document.body.appendChild(link);
+    link.click();
+    </script>
+
+
+
+
+
 <div class="container table-responsive">
 
     <div class="container table-responsive">
