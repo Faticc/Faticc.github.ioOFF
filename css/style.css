@@ -17,6 +17,10 @@ a:hover {
     color: #1a1616;
 }
 
+.papyrus {
+    font-family: url(/fonts/1papyrus.ttf);
+}
+
 html {
     background-image: url(https://raw.githubusercontent.com/Faticc/Faticc.github.io/main/images/backg.png);
     background-repeat: no-repeat;
